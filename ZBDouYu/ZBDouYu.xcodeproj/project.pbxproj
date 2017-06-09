@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		8EFD7F5B1EEA3DE2000C4E73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFD7F5A1EEA3DE2000C4E73 /* AppDelegate.swift */; };
-		8EFD7F5D1EEA3DE2000C4E73 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFD7F5C1EEA3DE2000C4E73 /* ViewController.swift */; };
 		8EFD7F601EEA3DE2000C4E73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EFD7F5E1EEA3DE2000C4E73 /* Main.storyboard */; };
 		8EFD7F621EEA3DE2000C4E73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EFD7F611EEA3DE2000C4E73 /* Assets.xcassets */; };
 		8EFD7F651EEA3DE2000C4E73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EFD7F631EEA3DE2000C4E73 /* LaunchScreen.storyboard */; };
@@ -17,7 +16,6 @@
 /* Begin PBXFileReference section */
 		8EFD7F571EEA3DE2000C4E73 /* ZBDouYu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZBDouYu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EFD7F5A1EEA3DE2000C4E73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8EFD7F5C1EEA3DE2000C4E73 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8EFD7F5F1EEA3DE2000C4E73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8EFD7F611EEA3DE2000C4E73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8EFD7F641EEA3DE2000C4E73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,14 +52,69 @@
 		8EFD7F591EEA3DE2000C4E73 /* ZBDouYu */ = {
 			isa = PBXGroup;
 			children = (
+				8EFD7F6C1EEA4468000C4E73 /* Classes */,
 				8EFD7F5A1EEA3DE2000C4E73 /* AppDelegate.swift */,
-				8EFD7F5C1EEA3DE2000C4E73 /* ViewController.swift */,
 				8EFD7F5E1EEA3DE2000C4E73 /* Main.storyboard */,
 				8EFD7F611EEA3DE2000C4E73 /* Assets.xcassets */,
 				8EFD7F631EEA3DE2000C4E73 /* LaunchScreen.storyboard */,
 				8EFD7F661EEA3DE2000C4E73 /* Info.plist */,
 			);
 			path = ZBDouYu;
+			sourceTree = "<group>";
+		};
+		8EFD7F6C1EEA4468000C4E73 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8EFD7F701EEA4468000C4E73 /* Main */,
+				8EFD7F6D1EEA4468000C4E73 /* Follow */,
+				8EFD7F6E1EEA4468000C4E73 /* Home */,
+				8EFD7F6F1EEA4468000C4E73 /* Live */,
+				8EFD7F711EEA4468000C4E73 /* Profile */,
+				8EFD7F721EEA4468000C4E73 /* Tools */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		8EFD7F6D1EEA4468000C4E73 /* Follow */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Follow;
+			sourceTree = "<group>";
+		};
+		8EFD7F6E1EEA4468000C4E73 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		8EFD7F6F1EEA4468000C4E73 /* Live */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Live;
+			sourceTree = "<group>";
+		};
+		8EFD7F701EEA4468000C4E73 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		8EFD7F711EEA4468000C4E73 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		8EFD7F721EEA4468000C4E73 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +190,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8EFD7F5D1EEA3DE2000C4E73 /* ViewController.swift in Sources */,
 				8EFD7F5B1EEA3DE2000C4E73 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,8 +313,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 48LJY67UZE;
 				INFOPLIST_FILE = ZBDouYu/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.wecity.ZBDouYu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -274,8 +328,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 48LJY67UZE;
 				INFOPLIST_FILE = ZBDouYu/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.wecity.ZBDouYu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -302,6 +358,7 @@
 				8EFD7F6B1EEA3DE2000C4E73 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
